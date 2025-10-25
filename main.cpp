@@ -91,7 +91,6 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 {
   using u_t = unsigned;
   u_t a = 0, b = 0, c = 0;
-  std::cin >> c >> b;
   if (!(std::cin >> c >> b))
 {
   if (std::cin.eof())
