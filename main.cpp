@@ -81,7 +81,7 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 {
   return 2;
 }
-  if (a2 + b2 == c2 || a2 + c2 == b2 || b2 + c2 == a2)
+  if (k == c2 || f == b2 || g == a2)
 {
   return 3;
 }
