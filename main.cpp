@@ -87,12 +87,6 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 }
   return 0;
 }
-bool isPyth(unsigned int a, unsigned int b, unsigned int c) {
-    bool p = a * a == (b * b + c * c);
-    p = p || (b * b == (a * a + c * c));
-    p = p || (c * c == (a * a + b * b));
-    return c;
-}
 int main()
 {
   using u_t = unsigned;
