@@ -5,6 +5,22 @@ bool any_zeros(unsigned int a, unsigned int b)
 {
   return a == 0 || b == 0;
 }
+unsigned int sum(unsigned int a, unsigned int b)
+{
+  unsigned int c = 0;
+  using lim_unsignedint = std::numeric_limits<unsigned int>;
+  const unsigned int MAX = lim_unsignedint::max();
+  const unsigned int MIN = lim_unsignedint::min();
+  if (MAX - a < b)
+{
+  return c;
+}
+  else
+{
+  c = a + b;
+}
+  return c;
+}
 bool isPyth(unsigned int a, unsigned int b, unsigned int c) {
     bool p = a * a == (b * b + c * c);
     p = p || (b * b == (a * a + c * c));
