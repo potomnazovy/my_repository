@@ -21,6 +21,10 @@ unsigned int sum(unsigned int a, unsigned int b)
 }
   return c;
 }
+bool is_upper_overflow(unsigned int res, unsigned int a, unsigned int b)
+{
+  return res == 0 && a > 0 && b > 0;
+}
 bool isPyth(unsigned int a, unsigned int b, unsigned int c) {
     bool p = a * a == (b * b + c * c);
     p = p || (b * b == (a * a + c * c));
