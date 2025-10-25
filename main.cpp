@@ -25,6 +25,26 @@ bool is_upper_overflow(unsigned int res, unsigned int a, unsigned int b)
 {
   return res == 0 && a > 0 && b > 0;
 }
+unsigned int multiplies(unsigned int a, unsigned int b)
+{
+  unsigned int c = 0;
+  if (any_zeros(a, b))
+{
+  return c;
+}
+  using lim_unsignedint = std::numeric_limits<unsigned int>;
+  const unsigned int MAX = lim_unsignedint::max();
+  const unsigned int MIN = lim_unsignedint::min();
+  if (a > MAX / b)
+{
+  return c;
+}
+  else
+{
+  c = a * b;
+}
+  return c;
+}
 bool isPyth(unsigned int a, unsigned int b, unsigned int c) {
     bool p = a * a == (b * b + c * c);
     p = p || (b * b == (a * a + c * c));
