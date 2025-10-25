@@ -1,5 +1,10 @@
 #include <iostream>
 #include <cstddef>
+#include <limits>
+bool any_zeros(unsigned int a, unsigned int b)
+{
+  return a == 0 || b == 0;
+}
 bool isPyth(unsigned int a, unsigned int b, unsigned int c) {
     bool p = a * a == (b * b + c * c);
     p = p || (b * b == (a * a + c * c));
