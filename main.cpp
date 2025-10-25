@@ -52,31 +52,31 @@ bool is_upper_mult_overflow(unsigned int res, unsigned int a, unsigned int b)
 unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 {
   unsigned int a2 = multiplies(a, a);
-  unsigned int b2 = multiplies(b, b);
-  unsigned int c2 = multiplies(c, c);
-  if (is_upper_mult_overflow(a2, a, a))
+   if (is_upper_mult_overflow(a2, a, a))
 {
   return 2;
 }
+  unsigned int b2 = multiplies(b, b);
   if (is_upper_mult_overflow(b2, b, b))
 {
   return 2;
 }
+  unsigned int c2 = multiplies(c, c);
   if (is_upper_mult_overflow(c2, c, c))
 {
   return 2;
 }
   unsigned int k = sum(a2, b2);
-  unsigned int f = sum(a2, c2);
-  unsigned int g = sum(b2, c2);
   if (is_upper_overflow(k, a2, b2))
 {
   return 2;
 }
+  unsigned int f = sum(a2, c2);
   if (is_upper_overflow(f, a2, c2))
 {
   return 2;
 }
+  unsigned int g = sum(b2, c2);
   if (is_upper_overflow(g, b2, c2))
 {
   return 2;
