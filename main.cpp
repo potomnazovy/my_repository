@@ -87,17 +87,27 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 }
   return 0;
 }
-int main()
+  int main()
 {
   using u_t = unsigned;
   u_t a = 0, b = 0, c = 0;
   std::cin >> c >> b;
   size_t count = 0;
-  while (std::cin >> a) {
-    count += isPyth(a, b, c) ? 1 : 0;
-    c = b;
-    b = a;
-  }
+  unsigned int j = 0;
+  while (std::cin >> a)
+{
+  j = is_pyth(a, b, c);
+  if (j == 2)
+{
+  return 2;
+}
+  else if (j == 3)
+{
+    count++;
+}
+  c = b;
+  b = a;
+}
   if (std::cin.eof()) {
     std::cout << count;
     std::cout << "\n";
