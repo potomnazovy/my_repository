@@ -92,6 +92,18 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
   using u_t = unsigned;
   u_t a = 0, b = 0, c = 0;
   std::cin >> c >> b;
+  if (!(std::cin >> c >> b))
+{
+  if (std::cin.eof())
+{
+  return 0;
+}
+  else
+{
+    std::cerr << "Error\n";
+    return 1;
+}
+}
   size_t count = 0;
   unsigned int j = 0;
   while (std::cin >> a)
