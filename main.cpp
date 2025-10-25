@@ -103,18 +103,20 @@ unsigned int is_pyth(unsigned int a, unsigned int b, unsigned int c)
 }
   else if (j == 3)
 {
-    count++;
+  count++;
 }
   c = b;
   b = a;
 }
-  if (std::cin.eof()) {
-    std::cout << count;
-    std::cout << "\n";
-  }
-  else if (std::cin.fail()) {
-    std::cerr << "Error\n";
-    return 1;
-  }
+  if (std::cin.eof())
+{  
+  std::cout << count;
+  std::cout << "\n";
+}
+  else if (std::cin.fail())
+{
+  std::cerr << "Error\n";
+  return 1;
+}
 }
 
