@@ -10,7 +10,6 @@ unsigned int sum(unsigned int a, unsigned int b)
   unsigned int c = 0;
   using lim_unsignedint = std::numeric_limits<unsigned int>;
   const unsigned int MAX = lim_unsignedint::max();
-  const unsigned int MIN = lim_unsignedint::min();
   if (MAX - a < b)
 {
   return c;
@@ -34,7 +33,6 @@ unsigned int multiplies(unsigned int a, unsigned int b)
 }
   using lim_unsignedint = std::numeric_limits<unsigned int>;
   const unsigned int MAX = lim_unsignedint::max();
-  const unsigned int MIN = lim_unsignedint::min();
   if (a > MAX / b)
 {
   return c;
